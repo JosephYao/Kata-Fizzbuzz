@@ -13,7 +13,8 @@ public class TestFizzbuzz {
     }
 
     @Test
-    public void _3_should_return_fizz() {
+    public void multiply_of_3_should_return_fizz() {
         assertEquals("fizz", convertor.convert(3));
+        assertEquals("fizz", convertor.convert(6));
     }
 }

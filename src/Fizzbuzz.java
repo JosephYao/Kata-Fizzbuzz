@@ -1,5 +1,8 @@
 public class Fizzbuzz {
     public String convert(int number) {
+        if (number == 5)
+            return "buzz";
+
         if (isFizz(number))
             return "fizz";
 

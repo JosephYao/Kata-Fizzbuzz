@@ -1,5 +1,5 @@
 public class Fizzbuzz {
     public String convert(int number) {
-        return "1";
+        return String.valueOf(number);
     }
 }

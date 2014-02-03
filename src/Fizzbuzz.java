@@ -1,6 +1,6 @@
 public class Fizzbuzz {
     public String convert(int number) {
-        if (number == 15)
+        if (isBuzz(number) && isFizz(number))
             return "fizzbuzz";
 
         if (isBuzz(number))

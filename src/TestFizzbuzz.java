@@ -25,7 +25,8 @@ public class TestFizzbuzz {
     }
 
     @Test
-    public void _15_should_return_fizzbuzz() {
+    public void multiply_of_15_should_return_fizzbuzz() {
         assertEquals("fizzbuzz", convertor.convert(15));
+        assertEquals("fizzbuzz", convertor.convert(30));
     }
 }

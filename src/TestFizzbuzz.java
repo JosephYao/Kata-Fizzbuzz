@@ -19,7 +19,8 @@ public class TestFizzbuzz {
     }
 
     @Test
-    public void _5_should_return_buzz() {
+    public void multiply_of_5_should_return_buzz() {
         assertEquals("buzz", convertor.convert(5));
+        assertEquals("buzz", convertor.convert(10));
     }
 }

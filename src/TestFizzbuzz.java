@@ -23,4 +23,9 @@ public class TestFizzbuzz {
         assertEquals("buzz", convertor.convert(5));
         assertEquals("buzz", convertor.convert(10));
     }
+
+    @Test
+    public void _15_should_return_fizzbuzz() {
+        assertEquals("fizzbuzz", convertor.convert(15));
+    }
 }

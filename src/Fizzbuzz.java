@@ -1,15 +1,16 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class Fizzbuzz {
-    public String convert(int number) {
-        if (isBuzz(number) && isFizz(number))
-            return "fizzbuzz";
+    public String convert(final int number) {
+        Map<String, String> convertorToString = new HashMap<String, String>(){{
+            put("" + false + false, String.valueOf(number));
+            put("" + true + false, "fizz");
+            put("" + false + true, "buzz");
+            put("" + true + true, "fizzbuzz");
+        }};
 
-        if (isBuzz(number))
-            return "buzz";
-
-        if (isFizz(number))
-            return "fizz";
-
-        return String.valueOf(number);
+        return convertorToString.get("" + isFizz(number) + isBuzz(number));
     }
 
     private boolean isBuzz(int number) {

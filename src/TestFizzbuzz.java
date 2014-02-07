@@ -29,4 +29,10 @@ public class TestFizzbuzz {
         assertEquals("fizzbuzz", convertor.convert(15));
         assertEquals("fizzbuzz", convertor.convert(30));
     }
+
+    @Test
+    public void number_contains_3_should_return_fizz() {
+        assertEquals("fizz", convertor.convert(13));
+        assertEquals("fizz", convertor.convert(23));
+    }
 }
